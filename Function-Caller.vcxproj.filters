@@ -15,18 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DLL_Function_Caller.cpp">
+    <ClCompile Include="Function-Caller.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="DLL_Creater.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="..\DLL_Creater\Debug\DLLCreater.lib">
-      <Filter>Header Files</Filter>
-    </Library>
   </ItemGroup>
 </Project>

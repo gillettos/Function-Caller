@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{39202073-4a4a-4837-8e1c-c1b713986154}</ProjectGuid>
-    <RootNamespace>DLLFunctionCaller</RootNamespace>
+    <ProjectGuid>{a8e8e6d0-d426-4754-9b2a-2a00e9c338d4}</ProjectGuid>
+    <RootNamespace>FunctionCaller</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -92,8 +92,6 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>DLLCreater.lib;C:\TwinCAT\AdsApi\TcAdsDll\Lib\TcAdsDll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\RichG\Source\repos\DLL_Creater\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -141,13 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DLL_Function_Caller.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="DLL_Creater.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="..\DLL_Creater\Debug\DLLCreater.lib" />
+    <ClCompile Include="Function-Caller.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
